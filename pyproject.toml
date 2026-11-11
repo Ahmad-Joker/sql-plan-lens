@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "sql-plan-lens"
+version = "0.1.0"
+description = "Offline SQLite query plan diagnostics"
+requires-python = ">=3.10"
+[project.scripts]
+sql-plan-lens = "sql_plan_lens.cli:main"
+[tool.setuptools.packages.find]
+where = ["src"]
